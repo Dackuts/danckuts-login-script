@@ -1,0 +1,43 @@
+{
+	"include": ["src/**/*.ts", "./build.js"],
+	"compilerOptions": {
+		//* base options
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "ESNext",
+		"lib": ["ESNext"],
+		"allowJs": false,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"noErrorTruncation": true,
+
+		//* strictness options
+		"strict": true,
+		"exactOptionalPropertyTypes": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitAny": true,
+		"preserveConstEnums": true,
+		"experimentalDecorators": false,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"verbatimModuleSyntax": true,
+
+		//* transpiling
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"noEmit": true,
+		"incremental": true,
+
+		"baseUrl": "./",
+		"paths": {
+			"~/*": ["other/*"],
+			"~cli/*": ["cli/*"]
+		}
+	}
+}

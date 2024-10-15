@@ -1,0 +1,26 @@
+{
+	"name": "login-script",
+	"version": "0.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "node build.js",
+		"start": "node dist/index.js",
+		"start:build": "pnpm build && pnpm start"
+	},
+	"type": "module",
+	"files": ["dist/**", "types"],
+	"types": "types/index.d.ts",
+	"author": "Michael Kassabov",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.2",
+		"@types/node": "22.7.5",
+		"esbuild": "^0.24.0",
+		"pathe": "^1.1.2",
+		"tsx": "4.19.1",
+		"typescript": "5.6.3"
+	},
+	"dependencies": {
+		"effect": "^3.9.2"
+	}
+}
